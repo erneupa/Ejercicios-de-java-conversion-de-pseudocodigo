@@ -28,17 +28,23 @@ public class Main {
 **2.** Hacer un pseudocódigo que imprima los números impares entre 0 y 100. 
 
 ```
-Algoritmo contador_impares
-	contador<-0
-	Mientras contador<=100 Hacer
-		Si contador%2<>0 Entonces
-			Escribir contador
-			contador=contador+1
-		SiNo
-			contador=contador+1
-		Fin Si
-	Fin Mientras
-FinAlgoritmo
+public class Main {
+  public static void main(String[] args) {
+    
+    int contador = 0;
+    
+    while (contador <=100) {
+        if (contador%2==0) {
+            System.out.println(contador);
+            contador++;
+        }
+        else {
+            contador++;
+        }
+    }
+    
+  }
+}
 
 ```
 ![2](https://github.com/erneupa/PSEUDOC-DIGO-1/blob/main/contador_impares.png)
