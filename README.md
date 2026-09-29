@@ -1,12 +1,13 @@
 # Ejercicios-de-java-conversion-de-pseudocodigo
 
-A continuación, se deben realizar el pseudocódigo y el diagrama de flujo de
-los siguientes enunciados. Se puede utilizar herramientas como PSeInt para realizar los ejercicios y verificar el correcto funcionamiento del algoritmo planteado.
+### A continuación, se deben realizar el pseudocódigo y el diagrama de flujo de 
+los siguientes enunciados. Se puede utilizar herramientas como PSeInt para 
+realizar los ejercicios y verificar el correcto funcionamiento del algoritmo 
+planteado. 
 
-1. Hacer un pseudocódigo que imprima los números del 100 al 0, en orden decreciente.
-
+**1.** Hacer un pseudocódigo que imprima los números del 100 al 0, en 
+orden decreciente. 
 ```
-
 public class Main {
   public static void main(String[] args) {
     
@@ -22,8 +23,11 @@ public class Main {
 
 ```
 
-2. Hacer un pseudocódigo que imprima los números impares entre 0 y 100.
+![1](https://github.com/erneupa/PSEUDOC-DIGO-1/blob/main/contador_inverso.png)
 
+**2.** Hacer un pseudocódigo que imprima los números impares entre 0 y 100. 
+
+```
 Algoritmo contador_impares
 	contador<-0
 	Mientras contador<=100 Hacer
@@ -36,10 +40,12 @@ Algoritmo contador_impares
 	Fin Mientras
 FinAlgoritmo
 
-2
+```
+![2](https://github.com/erneupa/PSEUDOC-DIGO-1/blob/main/contador_impares.png)
 
-3. Hacer un programa que imprima la suma de los 100 primeros números.
+**3.** Hacer un programa que imprima la suma de los 100 primeros números. 
 
+```
 Algoritmo contador_suma
 	contador<-0
 	Mientras contador<=100 Hacer
@@ -48,10 +54,12 @@ Algoritmo contador_suma
 		Escribir numSuma
 	Fin Mientras
 FinAlgoritmo
-3
+```
 
-4. Hacer un pseudocódigo que imprima todos los números naturales que hay desde el 0 hasta un número que introducimos por teclado.
+![3](https://github.com/erneupa/PSEUDOC-DIGO-1/blob/main/contador_suma.png)
 
+**4.** Hacer un pseudocódigo que imprima todos los números naturales que hay desde el 0 hasta un número que introducimos por teclado. 
+```
 Algoritmo imprimir_naturales
 	contador<-0
 	Escribir "Escribe un numero natural"
@@ -61,10 +69,12 @@ Algoritmo imprimir_naturales
 		contador=contador+1
 	Fin Mientras
 FinAlgoritmo
-4
+```
 
-5. Introducir un numero por teclado. Que nos diga si es positivo o negativo.
+![4](https://github.com/erneupa/PSEUDOC-DIGO-1/blob/main/imprimir_naturales.png)
 
+**5.** Introducir un numero por teclado. Que nos diga si es positivo o negativo. 
+```
 Algoritmo positivo_negativo
 	Escribir "Escribe un numero"
 	Leer numUsuario
@@ -75,10 +85,13 @@ Algoritmo positivo_negativo
 	Fin Si
 FinAlgoritmo
 
-5
+```
 
-6. Programa donde introducimos tantas frases como queramos (el usuario) y contarlas.
+![5](https://github.com/erneupa/PSEUDOC-DIGO-1/blob/main/positivo_negativo.png)
 
+**6.** Programa donde introducimos tantas frases como queramos (el usuario) y contarlas.
+
+```
 Algoritmo cadenas_escribir
 	seguir=1
 	Mientras seguir=1 Hacer
@@ -97,10 +110,12 @@ Algoritmo cadenas_escribir
 FinAlgoritmo
 
 
-6
+```
+![6](https://github.com/erneupa/PSEUDOC-DIGO-1/blob/main/cadenas_escribir.png)
 
-7. Imprimir y contar los múltiplos de 3 desde 0 hasta un número que introducimos por teclado.
+**7.** Imprimir y contar los múltiplos de 3 desde 0 hasta un número que introducimos por teclado.
 
+```
 Algoritmo multiplos_tres
 	Escribir "Escribe un numero"
 	Leer numUsuario
@@ -111,10 +126,13 @@ Algoritmo multiplos_tres
 	Fin Mientras
 FinAlgoritmo
 
-7
+```
 
-8. Hacer un pseudocódigo que imprima el mayor y el menor de una serie de cinco números que vamos introduciendo por teclado.
+![7](https://github.com/erneupa/PSEUDOC-DIGO-1/blob/main/multiplos_tres.png)
 
+**8.** Hacer un pseudocódigo que imprima el mayor y el menor de una serie de cinco números que vamos introduciendo por teclado. 
+
+```
 Algoritmo mayor_menor
 	contador<-1
 	
@@ -142,10 +160,14 @@ Algoritmo mayor_menor
     Escribir "Mayor: ", numMayor
     Escribir "Menor: ", numMenor
 FinAlgoritmo
-8
+```
 
-9. Introducir dos números por teclado. Imprimir los números naturales que hay entre ambos números empezando por el más pequeño, contar cuantos hay y cuantos de ellos son pares. Calcular la suma de los impares.
+![8](https://github.com/erneupa/PSEUDOC-DIGO-1/blob/main/mayor_menor.png)
 
+**9.** Introducir dos números por teclado. Imprimir los números naturales que hay entre ambos números empezando por el más pequeño, 
+contar cuantos hay y cuantos de ellos son pares. Calcular la suma de los impares.
+
+```
 Algoritmo imprimir_entre_pares
 	
 	Escribir "Escribe el primer número"
@@ -186,10 +208,13 @@ Algoritmo imprimir_entre_pares
 	Escribir "Total suma impares: ",sumaImpar
 FinAlgoritmo
 
-9
+```
 
-10. Imprimir diez veces la serie de números del 1 al 10.
+![9](https://github.com/erneupa/PSEUDOC-DIGO-1/blob/main/imprimir_entre_pares.png)
 
+
+**10.** Imprimir diez veces la serie de números del 1 al 10.
+```
 Algoritmo imprimir_diez
 	contador<-1
 	contadorSerie<-1
@@ -205,4 +230,8 @@ Algoritmo imprimir_diez
 	FinMientras
 	
 FinAlgoritmo
-10
+```
+
+![10](https://github.com/erneupa/PSEUDOC-DIGO-1/blob/main/imprimir_diez.png)
+
+
