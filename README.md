@@ -52,14 +52,22 @@ public class Main {
 **3.** Hacer un programa que imprima la suma de los 100 primeros números. 
 
 ```
-Algoritmo contador_suma
-	contador<-0
-	Mientras contador<=100 Hacer
-		numSuma=numSuma+contador
-		contador=contador+1
-		Escribir numSuma
-	Fin Mientras
-FinAlgoritmo
+public class Main {
+  public static void main(String[] args) {
+    
+    int contador = 0;
+    int numSuma = 0;
+    
+    while (contador <=100) {
+       
+        contador++;
+        numSuma=numSuma+contador;
+        System.out.println(numSuma);
+        
+    }
+    
+  }
+}
 ```
 
 ![3](https://github.com/erneupa/PSEUDOC-DIGO-1/blob/main/contador_suma.png)
