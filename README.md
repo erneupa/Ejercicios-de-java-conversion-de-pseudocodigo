@@ -97,15 +97,22 @@ public class main {
 
 **5.** Introducir un numero por teclado. Que nos diga si es positivo o negativo. 
 ```
-Algoritmo positivo_negativo
-	Escribir "Escribe un numero"
-	Leer numUsuario
-	Si numUsuario<0 Entonces
-		Escribir numUsuario, " es negativo"
-	SiNo
-		Escribir numUsuario, " es positivo"
-	Fin Si
-FinAlgoritmo
+import java.util.Scanner;
+public class main {
+	public static void main(String[] args) {
+		Scanner escaner = new Scanner(System.in);
+		System.out.println("Escribe un número");
+		
+		int numUsuario=escaner.nextInt();
+		
+		if (numUsuario<0) {
+			System.out.println(numUsuario + " es negativo");
+		}
+		else {
+			System.out.println(numUsuario + " es positivo");
+		}
+	  }
+}
 
 ```
 
