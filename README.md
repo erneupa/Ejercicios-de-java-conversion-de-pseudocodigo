@@ -74,15 +74,23 @@ public class Main {
 
 **4.** Hacer un pseudocódigo que imprima todos los números naturales que hay desde el 0 hasta un número que introducimos por teclado. 
 ```
-Algoritmo imprimir_naturales
-	contador<-0
-	Escribir "Escribe un numero natural"
-	Leer numUsuario
-	Mientras contador<=numUsuario Hacer
-		Escribir contador
-		contador=contador+1
-	Fin Mientras
-FinAlgoritmo
+import java.util.Scanner;
+public class main {
+	public static void main(String[] args) {
+		Scanner escaner = new Scanner(System.in);
+		System.out.println("Escribe un número natural");
+		
+		int numUsuario=escaner.nextInt();
+		
+		int contador=0;
+		
+		while (contador<=numUsuario) {
+			System.out.println(contador);
+			contador++;
+		}
+	  }
+}
+
 ```
 
 ![4](https://github.com/erneupa/PSEUDOC-DIGO-1/blob/main/imprimir_naturales.png)
