@@ -121,22 +121,35 @@ public class main {
 **6.** Programa donde introducimos tantas frases como queramos (el usuario) y contarlas.
 
 ```
-Algoritmo cadenas_escribir
-	seguir=1
-	Mientras seguir=1 Hacer
-		Escribir "Escribe una frase"
-		Leer frase
+import java.util.Scanner;
+public class main {
+	public static void main(String[] args) {
+		Scanner escaner = new Scanner(System.in);
 		
-		Escribir "Quieres seguir?? 1(seguir)/2(salir)"
-		Leer respuesta
-		Si respuesta<>1 Entonces
-			seguir=2
+		
+		
+		
+		int segir=1;
+		while (segir==1) {
 			
-		SiNo
-			seguir=1
-		FinSi
-	FinMientras
-FinAlgoritmo
+			System.out.println("Escribe una frase");
+			String fraseUsuario=escaner.nextLine();
+			
+			System.out.println("Quieres seguir?? 1(seguir)/2(salir)");
+			int respuesta=escaner.nextInt();
+			escaner.nextLine();
+			
+			
+			if (respuesta!=1) {
+				segir=2;
+			}
+			else {
+				segir=1;
+			}
+			
+		}
+	  }
+}
 
 
 ```
