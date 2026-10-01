@@ -158,15 +158,25 @@ public class main {
 **7.** Imprimir y contar los múltiplos de 3 desde 0 hasta un número que introducimos por teclado.
 
 ```
-Algoritmo multiplos_tres
-	Escribir "Escribe un numero"
-	Leer numUsuario
-	contador<-0
-	Mientras  contador<=numUsuario Hacer
-		Escribir 3*contador
-		contador=contador+1
-	Fin Mientras
-FinAlgoritmo
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+
+        Scanner escaner=new Scanner(System.in);
+        
+        System.out.println("Escribe un número");
+        int numUsuario = escaner.nextInt();
+        
+        int contador=0;
+        
+        while (contador<=numUsuario){
+            System.out.println(3*contador);
+            contador++;
+        }
+    }
+}
 
 ```
 
