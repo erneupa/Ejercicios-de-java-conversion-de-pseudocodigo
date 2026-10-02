@@ -304,3 +304,27 @@ public class Main {
 ![10](https://github.com/erneupa/PSEUDOC-DIGO-1/blob/main/imprimir_diez.png)
 
 
+**12.**
+
+```
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+
+        Scanner escaner = new Scanner(System.in);
+
+        System.out.println("Escribe el número que quieres calcular");
+        int numeroUsuario=escaner.nextInt();
+
+        int contador=1;
+
+        for (int i=1; i<=numeroUsuario;i++){
+
+            System.out.println(i);
+            contador=contador*i;
+        }
+
+        System.out.println("El factorial de "+ numeroUsuario+ " es "+ contador);
+    }
+}```
