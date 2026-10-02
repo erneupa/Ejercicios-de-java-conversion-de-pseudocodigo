@@ -283,21 +283,22 @@ public class Main {
 
 **10.** Imprimir diez veces la serie de números del 1 al 10.
 ```
-Algoritmo imprimir_diez
-	contador<-1
-	contadorSerie<-1
-	
-	Mientras contadorSerie<=10 Hacer
-		Escribir "Serie ", contadorSerie
-		contador<-1
-		Mientras contador<=10 Hacer
-			Escribir contador
-			contador=contador+1
-		FinMientras
-		contadorSerie=contadorSerie+1
-	FinMientras
-	
-FinAlgoritmo
+public class Main {
+    public static void main(String[] args) {
+
+        int contador=1, contadorSerie=1;
+
+        while (contadorSerie<=10){
+            System.out.println("Serie " + contadorSerie);
+            contador=1;
+            while (contador<=10) {
+                System.out.println(contador);
+                contador++;
+            }
+            contadorSerie++;
+        }
+    }
+}
 ```
 
 ![10](https://github.com/erneupa/PSEUDOC-DIGO-1/blob/main/imprimir_diez.png)
