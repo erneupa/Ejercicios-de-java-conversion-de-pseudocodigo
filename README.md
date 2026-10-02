@@ -185,33 +185,42 @@ public class Main {
 **8.** Hacer un pseudocódigo que imprima el mayor y el menor de una serie de cinco números que vamos introduciendo por teclado. 
 
 ```
-Algoritmo mayor_menor
-	contador<-1
-	
-	
-	Mientras contador <= 5 Hacer
-        Escribir "Introduce el número ", contador, ":"
-        Leer num
-        
-		Si contador = 1 Entonces
-            numMayor <- num
-            numMenor <- num
-        SiNo
-            Si num > numMayor Entonces
-                numMayor <- num
-            FinSi
-            
-            Si num < numMenor Entonces
-                numMenor <- num
-            FinSi
-        FinSi
-        
-        contador <- contador + 1
-    FinMientras
-    
-    Escribir "Mayor: ", numMayor
-    Escribir "Menor: ", numMenor
-FinAlgoritmo
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+
+        Scanner escaner=new Scanner(System.in);
+
+        int numUsuario, numMayor = 0, numMenor = 0;
+        int contador=1;
+
+
+        while (contador<=5){
+            System.out.println("Escribe el número "+contador+" :");
+            numUsuario = escaner.nextInt();
+
+            if (contador==1){
+                numMayor=numUsuario;
+                numMenor=numUsuario;
+            }
+            else{
+                if (numUsuario > numMayor) {
+                    numMayor = numUsuario;
+                }
+
+                if (numUsuario < numMenor) {
+                        numMenor = numUsuario;
+                }
+            }
+            contador++;
+        }
+
+        System.out.println("Mayor: "+ numMayor);
+        System.out.println("Menor: "+ numMenor);
+
+    }
+}
 ```
 
 ![8](https://github.com/erneupa/PSEUDOC-DIGO-1/blob/main/mayor_menor.png)
