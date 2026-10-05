@@ -329,3 +329,41 @@ public class Main {
     }
 }
 ```
+
+**15.**
+
+```
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+
+        Scanner escaner = new Scanner(System.in);
+
+        System.out.println("Introduce un número entero mayor o igual que 1");
+        int numeroUsuario=escaner.nextInt();
+
+        int contador=1, contarDiv=0;
+
+        while (numeroUsuario<1){
+            System.out.println("Has escrito un número menor que 1, vuelve a intentarlo");
+            numeroUsuario=escaner.nextInt();
+        }
+
+        while (contador<=numeroUsuario){
+            if  (numeroUsuario%contador==0){
+                contarDiv++;
+            }
+            contador++;
+        }
+
+        if (contarDiv>2 || numeroUsuario==1){
+            System.out.println(" El número "+numeroUsuario+" es compuesto");
+        }
+        else {
+            System.out.println(" El número "+numeroUsuario+" es primo");
+        }
+    }
+}
+
+```
